@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(101, 231, 45);
+}
+
+.input-field {
+    background: rgb(126, 226, 73);
+    margin: 15px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin: 15px;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: rgb(0, 0, 0);
+    color: rgb(101, 231, 45);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: bg 1s;
+    font-weight: bolder;
+    font-size: large;
+}
+
+button:hover {
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group {
+    height: 270px;
+}
+
+.btn-field button.disable {
+    background: rgb(0, 0, 0);
+    color: rgb(101, 231, 45);
+}
